@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../styles/belts.css">
+    <style>
+        /* Add some simple styles for the profile picture */
+        #profilePicture {
+            margin-bottom: -15px;
+            margin-top: 26px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: none; /* Hide by default */
+        }
+    </style>
+</head>
+<body>
+    <div id="johnSection" class="susan-container">
+        <h1>Sign in with Google</h1>
+        <button class="lucas-button" id="googleSignInBtn">Sign in with Google</button>
+    </div>
+    <div id = "be">
+    <br><br><br><br>
+    <div id="loader" class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div id="aliceMessage" class="hidden">Welcome, <span id="jamesDisplay"></span>!</div>
+    <img id="profilePicture" alt="Profile Picture">
+    <div id="hide" class="hide form-container">
+        <h2>Generate Images</h2>
+        <label for="menu1">Image Type:</label>
+        <select id="menu1" onchange="updateSelectedValue()">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Photo">Photo</option>
+        </select>
+        <p id="selectedMenuValue">No Selection</p>
+
+        <label for="startRoll">Start Roll:</label>
+        <input type="text" id="startRoll">
+
+        <label for="endRoll">End Roll:</label>
+        <input type="text" id="endRoll">
+
+        <button class="lucas-button" id="che">Generate Images</button>
+        <p id="imageCount">Total Images: 0</p>
+    </div>
+    <div>
+        <div id = "loa" class="loader" style="display: none;">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+    <div id="imageGallery">
+        
+    </div></div>
+    <script src="../scripts/aldjbcaubsjh.js"></script>
+    <script src = "../scripts/bhasdjhsa.js" type="module"></script>
+</body>
+</html>

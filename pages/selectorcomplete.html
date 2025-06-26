@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../styles/belts2.css">
+</head>
+<body>
+    <div id = "be">
+    <br><br><br><br>
+    <div id="loader" class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div id="headerContainer">
+        <h1 id="exampleHeading">Email Verification</h1>
+        <img id="profileImage" src="" alt="Profile Image" style="display: none;">
+    </div>
+  <center>  <div id="googleLoginBtn">
+    <button id="googleLoginBtn">Sign in with Google</button>
+    <center><div class = "ddess" id="somemiss"></div>
+    </center></div></center>
+    <div id="welcomeMessage" style="margin-top: 20px;"></div>
+
+    <div id="selectContainer" style="display:none; margin-top: 20px; text-align: center;">
+        <h2>CHOOSE</h2> 
+        <center><div class="select-container">
+            <form id="myForm">
+                <label for="menu1">Image:</label>
+                <select id="menu1">
+                    <option value="" disabled selected>Select an Image</option>
+                    <!-- Populate with options -->
+                </select>
+                <br>
+                <label for="menu2">Year:</label>
+                <select id="menu2">
+                    <option value="" disabled selected>Select Year</option>
+                    <!-- Populate with options -->
+                </select>
+                <br>
+                <label for="menu3">Branch:</label>
+                <select id="menu3">
+                    <option value="" disabled selected>Select Branch</option>
+                    <!-- Populate with options -->
+                </select>
+                <br>
+                <label for="menu4">Class:</label>
+                <select id="menu4">
+                    <option value="" disabled selected>Select Section</option>
+                </select>
+                <br>
+                <button type="button" id="showSelectedBtn">Show Selected Values</button>
+            </form></center>
+            <center><p id="imageCount">Total Images: 0</p> </center>
+            <div id="notfound"></div>
+            <center><div>
+                <br><br>
+                <div id="loar" class="loader" style="display: none;">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div></center>
+            <div id="imageGallery"></div>
+        </div>
+        </div>
+    </div>
+
+    <p id="result"></p>
+
+    <script src="../scripts/favcgushfjj.js" defer></script>
+    <script src="../scripts/apas.js" type="module" defer></script>
+</body>
+</html>

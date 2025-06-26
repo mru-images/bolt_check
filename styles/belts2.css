@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #333;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    color: #eee;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+input[type="text"] {
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444;
+    color: #ddd;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.imageItem {
+    margin: 10px;
+    text-align: center;
+    background: #444;
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.imageItem img {
+    width: 300px;
+    height: auto;
+    border-bottom: 1px solid #555;
+    transition: transform 0.3s ease;
+}
+.imageItem:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+}
+.rollNumber {
+    padding: 10px;
+    font-weight: bold;
+    color: #eee;
+}
+#imageCount {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+.select-container {
+    margin-bottom: 20px;
+    align-items: center;
+}
+select {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+#result {
+    color: #eee;
+}
+.name-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-container, .main-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#profileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px; 
+}
+#headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+.ddess{
+    width: 355px;
+    height: 30px;
+
+}
+.infoButton {
+    display: none;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    margin-left: 112px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.infoButton:hover {
+    background-color: #0056b3;
+}
+.additionalLinks {
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 300px;
+}
+.additionalLinks img {
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    max-width: 90%  ; 
+    height: auto; 
+    border: 2px solid dimgray;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.additionalLinks img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+.imageItem.active .additionalLinks {
+    display: flex;
+}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+    animation: bounce 1.5s infinite ease-in-out, colorChange 5s infinite linear;
+  }
+
+  .dot:nth-child(1) {
+    background-color: #2ecc71;
+    animation-delay: 0s, 0s;
+  }
+
+  .dot:nth-child(2) {
+    background-color: #3498db;
+    animation-delay: 0.2s, 0.2s;
+  }
+
+  .dot:nth-child(3) {
+    background-color: #e74c3c;
+    animation-delay: 0.4s, 0.4s;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-25px);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: #2ecc71;
+    }
+    33% {
+      background-color: #3498db;
+    }
+    66% {
+      background-color: #e74c3c;
+    }
+    100% {
+      background-color: #2ecc71;
+    }
+  }
